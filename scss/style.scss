@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5,
 						}
 					}
 				}
-			}	
+			}
 			&.active{
 				a{
 					span{
@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5,
 				}
 			}
 		}
-		
+
 	}
 }
 
@@ -291,7 +291,7 @@ header{
 	position: absolute;
 	top: 0;
 	left: 0;
-	right: 0;	
+	right: 0;
 	z-index: 9;
 	margin: 0 auto;
 	@include media-breakpoint-down(sm){
@@ -443,7 +443,7 @@ header{
 			opacity: 1;
 		}
 	}
-	
+
 	.owl-nav {
 		position: absolute;
 		top: 50%;
@@ -540,7 +540,7 @@ header{
 					font-weight: 700!important;
 					font-size: 100px;
 					color: rgba(255,255,255,.08);
-				}	
+				}
 				h1 {
 					font-size: 55px;
 					color: $white;
@@ -637,12 +637,12 @@ header{
 					top: 2px;
 					display: block;
 					transform: translate(-50%, -50%);
-				}	
+				}
 				&.active {
 					border: 2px solid rgba(255,255,255,1);
-					span {	
+					span {
 						background: rgba(255,255,255,1);
-					}	
+					}
 				}
 			}
 		}
@@ -663,7 +663,7 @@ header{
 		text-align: center;
 		display: inline-block;
 	}
-} 
+}
 
 .bg-primary{
 	background: $primary;
@@ -938,7 +938,7 @@ textarea.form-control {
 				border: 2px solid $black;
 			}
 		}
-		
+
 	}
 }
 
@@ -1155,12 +1155,17 @@ textarea.form-control {
 
 //COVER BG
 .img,
-.author-img,
 .logo-img,
 .user-img{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+}
+
+.author-img {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50%;
 }
 
 // magnific pop up
@@ -1174,9 +1179,9 @@ textarea.form-control {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
-  -webkit-transition: all 0.3s ease-out; 
-  -moz-transition: all 0.3s ease-out; 
-  -o-transition: all 0.3s ease-out; 
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -1187,7 +1192,7 @@ textarea.form-control {
     opacity: 0.8;
 }
 
-.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
 }
@@ -1209,7 +1214,7 @@ textarea.form-control {
 			}
 		}
 		span{
-			
+
 		}
 	}
 	.counter-wrap{
@@ -1225,7 +1230,7 @@ textarea.form-control {
 	}
 }
 
-//blocks 
+//blocks
 .block-20 {
 	overflow: hidden;
 	background-size: cover;
@@ -1295,9 +1300,9 @@ textarea.form-control {
 			font-size: 16px;
 		}
 	}
-} 
+}
 
-//### .block-18 
+//### .block-18
 .block-18 {
 	.icon, .text {
 	}
@@ -1370,7 +1375,7 @@ textarea.form-control {
 		display: block;
 		sup {
 			font-size: 20px;
-			top: -2em; 
+			top: -2em;
 		}
 		.number {
 			font-size: 80px;
@@ -1436,14 +1441,14 @@ textarea.form-control {
 				&[aria-expanded="false"] {
 					&:before {
 						content: "\e313";
-						color: #ccc;	
+						color: #ccc;
 						font-family: 'icomoon';
 						position: absolute;
-				
+
 						transition: .3s all ease;
 					}
 				}
-				
+
 			}
 		}
 		.body-text {
@@ -1461,7 +1466,7 @@ textarea.form-control {
 			padding-bottom: 2em;
 		}
 		.owl-item {
-			box-shadow: 0 7px 20px -5px rgba(0,0,0,.2);	
+			box-shadow: 0 7px 20px -5px rgba(0,0,0,.2);
 		}
 		.owl-nav {
 			z-index: 2;
@@ -1505,7 +1510,7 @@ textarea.form-control {
 				margin-bottom: 10px;
 				transition: .3s all ease;
 				&.active {
-					
+
 					background: $primary;
 				}
 			}
@@ -1540,7 +1545,7 @@ textarea.form-control {
 		padding: 10% 7%;
 		@include media-breakpoint-up(md) {
 			width: 40%;
-			padding: 10% 7%;	
+			padding: 10% 7%;
 		}
 		.icon{
 			width: 100px;
@@ -1551,7 +1556,7 @@ textarea.form-control {
 			span{
 				color: $white;
 			}
-			opacity: 0;			
+			opacity: 0;
 		}
 		&:hover{
 			.icon{
@@ -1564,7 +1569,7 @@ textarea.form-control {
 		padding: 10% 7%;
 		@include media-breakpoint-up(md) {
 			width: 60%;
-			padding: 10% 7%;	
+			padding: 10% 7%;
 		}
 	}
 	.text {
@@ -1635,7 +1640,7 @@ textarea.form-control {
 				&:hover, &:focus {
 					color: $white;
 				}
-			}	
+			}
 		}
 	}
 	.prev {
@@ -1763,9 +1768,9 @@ textarea.form-control {
 	padding: 25px;
 	font-size: 15px;
 	width: 100%;
-	
+
 	float: left;
-	
+
 	background: $white;
 	*:last-child {
 		margin-bottom: 0;
@@ -1818,7 +1823,7 @@ textarea.form-control {
 	background-color: rgba(255,255,255,0.9);
 	box-shadow: 0px 24px 64px rgba(0,0,0,0.24);
 	border-radius:16px;
-	opacity: 0; 
+	opacity: 0;
 	visibility: hidden;
 	transition: opacity .2s ease-out, visibility 0s linear .2s;
 	z-index:1000;
