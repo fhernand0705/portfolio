@@ -1594,7 +1594,7 @@ textarea.form-control {
 	}
 	.image {
 		background-size: cover;
-		background-position: center center;
+		background-position: 0;
 		background-repeat: no-repeat;
 		@include media-breakpoint-down(sm) {
 			height: 300px;

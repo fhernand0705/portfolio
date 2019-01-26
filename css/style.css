@@ -7528,7 +7528,7 @@ header {
     float: left; }
     header .colorlib-navbar-brand .colorlib-logo {
       font-size: 20px;
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
       color: #fff;
       font-weight: 400;
       letter-spacing: 5px;
@@ -7882,6 +7882,16 @@ header {
   .about-section .author-img {
     display: block;
     height: 300px; } }
+
+.bold-text-about {
+  position: absolute;
+  font-size: 10em;
+  top: -80px;
+  left: -50px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.08);
+  text-transform: uppercase;
+}
 
 .wrap {
   padding: 0; }
@@ -8529,7 +8539,7 @@ textarea.form-control {
 
 .block-3 .image {
   background-size: cover;
-  background-position: center center;
+  background-position: 0%;
   background-repeat: no-repeat; }
   @media (max-width: 767.98px) {
     .block-3 .image {
