@@ -480,6 +480,16 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
+.contact {
+  position: relative;
+  left: 15em; }
+
+@media (max-width: 375px) {
+  .contact {
+    left: 1.2em;
+  }
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
