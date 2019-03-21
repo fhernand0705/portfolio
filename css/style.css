@@ -7511,8 +7511,8 @@ h1, h2, h3, h4, h5,
             -ms-transform: scaleX(1);
             -o-transform: scaleX(1);
             transform: scaleX(1); }
-      #colorlib-main-nav ul li.active a span {
-        color: #9E9E9E; }
+      /* #colorlib-main-nav ul li.active a span {
+        color: #9E9E9E; } */
         #colorlib-main-nav ul li.active a span:before {
           background: #9E9E9E;
           visibility: visible;
