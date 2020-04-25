@@ -1,5 +1,4 @@
-@import 'bootstrap/bootstrap';
-@import 'bootstrap/variables';
+
 
 $font-primary: 'Poppins',Arial, sans-serif;
 
@@ -64,16 +63,16 @@ body {
   margin: 0 3em 0 17em;
 }
 
-// SIDEBAR
 .side-bar-container {
 	display: flex;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  background-color: crimson;
-  width: 17em;
-	&ul {
-		background: : blue;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: crimson;
+	width: 17em;
+	.nav-list-container {
+		list-style-type: none;
+		color: whitesmoke;
 	}
 }

@@ -1,0 +1,57 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #121212;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #8c8c8c;
+  position: relative; }
+  body:after {
+    position: fixed;
+    top: -150px;
+    right: -50px;
+    bottom: 0;
+    content: '';
+    width: 400px;
+    height: 600px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    z-index: -1;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg); }
+  body:before {
+    position: fixed;
+    top: 500px;
+    left: -100px;
+    bottom: 0;
+    content: '';
+    width: 400px;
+    height: 400px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    z-index: -1;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg); }
+
+.main-wrapper {
+  display: block;
+  position: relative;
+  margin: 0 3em 0 17em; }
+
+.side-bar-container {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: crimson;
+  width: 17em; }
+  .side-bar-container .nav-list-container {
+    list-style-type: none;
+    color: whitesmoke; }
+
+/*# sourceMappingURL=style.css.map */
