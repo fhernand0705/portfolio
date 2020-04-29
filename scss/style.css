@@ -7,6 +7,12 @@ body {
   color: #8c8c8c;
   position: relative; }
 
+h1, h2 {
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.25);
+  font-weight: 800;
+  font-size: 2em; }
+
 .main-wrapper {
   display: block;
   position: relative;
@@ -19,12 +25,15 @@ body {
   top: 0;
   height: 100%;
   box-shadow: 0 0 15px black;
+  -moz-box-shadow: 0 0 15px black;
+  -webkit-box-shadow: 0 0 15px black;
   background-color: lightcoral;
   width: 14em; }
 
 .nav-list-container {
   display: flex;
   flex-direction: column;
+  font-size: 1em;
   width: 100%;
   margin: 2em 0;
   padding: 0 1em;
@@ -41,18 +50,77 @@ body {
 .name-text, .dev-text, .headshot {
   text-align: center; }
 
-.linkedin-link, .github-link, .resume-link {
+.linkedin-link, .github-link,
+.resume-link, .email-link {
   display: flex;
   flex-direction: row;
   margin: .5em .5em; }
-  .linkedin-link span, .github-link span, .resume-link span {
+  .linkedin-link span, .github-link span,
+  .resume-link span, .email-link span {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 10em;
     padding: .5em .5em; }
-  .linkedin-link a, .github-link a, .resume-link a {
+  .linkedin-link a, .github-link a,
+  .resume-link a, .email-link a {
     text-decoration: none;
     color: lightcyan; }
-  .linkedin-link i, .github-link i, .resume-link i {
+  .linkedin-link i, .github-link i,
+  .resume-link i, .email-link i {
     font-size: 1.5em; }
+
+.about-section {
+  margin: 2em 0; }
+  .about-section hr {
+    margin: 6em auto;
+    border: solid lightgray .1px;
+    width: 25%;
+    box-shadow: 0px 2px 11px black; }
+
+.bold-text-about {
+  position: absolute;
+  font-size: 10em;
+  top: -1.35em;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.08);
+  text-transform: uppercase; }
+
+.about-text {
+  padding: 3.5em 0 0; }
+
+.services-section {
+  margin: 5em 0 0; }
+  .services-section h1 {
+    text-align: center; }
+
+.skills-wrapper {
+  background: #fff;
+  margin: .5em auto;
+  width: 75%;
+  border-radius: 5em;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1); }
+
+.skills-item-list {
+  display: grid;
+  grid-template-columns: 11em 11em 11em;
+  justify-content: center;
+  list-style: none; }
+  .skills-item-list li {
+    flex: .2; }
+  .skills-item-list p, .skills-item-list div {
+    text-align: center; }
+  .skills-item-list i {
+    font-size: 2.5em; }
+  .skills-item-list .fa-mobile-alt {
+    font-size: 1.5em; }
+  .skills-item-list .fa-tablet-alt {
+    font-size: 1.8em; }
+  .skills-item-list .fa-laptop {
+    font-size: 2.25em; }
+  .skills-item-list .fa-desktop {
+    font-size: 2.5em; }
+  .skills-item-list .fa-gem {
+    transition: .35s ease-in-out; }
+  .skills-item-list .fa-gem:hover {
+    transform: rotate(-20deg); }
 
 /*# sourceMappingURL=style.css.map */
