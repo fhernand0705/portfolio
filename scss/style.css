@@ -6,6 +6,8 @@ body {
   font-weight: 400;
   color: #8c8c8c;
   position: relative; }
+  body a {
+    text-decoration: none; }
 
 h1, h2 {
   line-height: 1.5;
@@ -16,7 +18,7 @@ h1, h2 {
 .main-wrapper {
   display: block;
   position: relative;
-  margin: 0 3em 0 15em; }
+  margin: 0 -8px 0 14em; }
 
 .side-bar-container {
   display: flex;
@@ -24,9 +26,9 @@ h1, h2 {
   left: 0;
   top: 0;
   height: 100%;
-  box-shadow: 0 0 15px black;
-  -moz-box-shadow: 0 0 15px black;
-  -webkit-box-shadow: 0 0 15px black;
+  box-shadow: 0 0 10px black;
+  -moz-box-shadow: 0 0 10px black;
+  -webkit-box-shadow: 0 0 10px black;
   background-color: lightcoral;
   width: 14em; }
 
@@ -88,20 +90,23 @@ h1, h2 {
   padding: 3.5em 0 0; }
 
 .services-section {
-  margin: 5em 0 0; }
+  margin: 8em 0 0; }
   .services-section h1 {
     text-align: center; }
+  .services-section .container {
+    position: relative;
+    background-image: linear-gradient(176deg, darkturquoise 70%, #fff calc(70% + 2px));
+    -webkit-background-image: linear-gradient(176deg, darkturquoise 70%, #fff calc(70% + 2px));
+    -moz-background-image: linear-gradient(176deg, darkturquoise 70%, #fff calc(70% + 2px));
+    left: 0; }
 
 .skills-wrapper {
-  background: #fff;
-  margin: .5em auto;
-  width: 75%;
-  border-radius: 5em;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1); }
+  margin: .5em auto; }
 
 .skills-item-list {
   display: grid;
-  grid-template-columns: 11em 11em 11em;
+  grid-template-columns: 11em 11em 11em 11em;
+  grid-template-rows: 11em 11em 11em 8em;
   justify-content: center;
   list-style: none; }
   .skills-item-list li {
@@ -115,12 +120,37 @@ h1, h2 {
   .skills-item-list .fa-tablet-alt {
     font-size: 1.8em; }
   .skills-item-list .fa-laptop {
-    font-size: 2.25em; }
+    font-size: 2.2em; }
   .skills-item-list .fa-desktop {
     font-size: 2.5em; }
   .skills-item-list .fa-gem {
     transition: .35s ease-in-out; }
   .skills-item-list .fa-gem:hover {
     transform: rotate(-20deg); }
+
+.project-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.project-header-section {
+  text-align: center;
+  margin: 0 0 2em; }
+
+.project-wrapper {
+  background: whitesmoke;
+  width: 65%;
+  border-radius: 1em;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
+  .project-wrapper img {
+    width: 85%;
+    border-radius: 1em;
+    position: relative;
+    margin: -1em -1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .project-wrapper .text {
+    font-size: .75em;
+    margin: 0 auto;
+    width: 75%; }
 
 /*# sourceMappingURL=style.css.map */
