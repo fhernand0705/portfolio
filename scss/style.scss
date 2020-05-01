@@ -94,18 +94,14 @@ h1, h2 {
 
 .linkedin-link, .github-link,
 .resume-link, .email-link {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 2em 0;
 	margin: .5em .5em;
-		span {
-			background: rgba(0, 0, 0, 0.1);
-			border-radius: 10em;
-			padding: .5em .5em;
-		}
 		a {
 			text-decoration: none;
-			color: lightcyan;
+			color: #fff;
 		}
+		a:hover { color: lightgray; }
 		i {	font-size: 1.5em; }
 }
 
@@ -133,9 +129,12 @@ h1, h2 {
 
 
 // SKILLS SECTION
-.services-section {
+.skills-section {
 	margin: 8em 0 0;
-	h1 { text-align: center; }
+	h1, p, div {
+		text-align: center;
+		color: rgba(0,0,0,.3);
+	}
 	.container {
 		position: relative;
 		background-image: linear-gradient(176deg, darkturquoise 70%, #fff calc(70% + 2px));
@@ -155,11 +154,10 @@ h1, h2 {
 	grid-template-rows: 11em 11em 11em 8em;
 	justify-content: center;
 	list-style: none;
-		li { flex: .2; }
-		p, div { text-align: center; }
+
 		i {
 			font-size: 2.5em;
-			//color: darkturquoise;
+			color: lightgray;
 		}
 		.fa-mobile-alt { font-size: 1.5em; }
 		.fa-tablet-alt { font-size: 1.8em; }
@@ -177,6 +175,7 @@ h1, h2 {
 		align-items: center;
 	}
 }
+
 .project-header-section {
 	text-align: center;
 	margin: 0 0 2em;
@@ -184,18 +183,19 @@ h1, h2 {
 
 .project-wrapper {
 	background: whitesmoke;
-  width: 65%;
+  width: 70%;
+	margin: 3em;
   border-radius: 1em;
   box-shadow: 0 0 15px rgba(0,0,0,.2);
 		img {
-			width: 85%;
+			width: 90%;
 	    border-radius: 1em;
 	    position: relative;
 	    margin: -1em -1em;
-	    box-shadow: 0 0 10px rgba(0,0,0,.2);
+	    box-shadow: 0 0 15px rgba(0,0,0,.2);
 		}
 		.text {
-			font-size: .75em;
+			font-size: .85em;
 			margin: 0 auto;
 			width: 75%;
 		}

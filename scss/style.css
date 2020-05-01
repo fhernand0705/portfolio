@@ -54,18 +54,16 @@ h1, h2 {
 
 .linkedin-link, .github-link,
 .resume-link, .email-link {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 2em 0;
   margin: .5em .5em; }
-  .linkedin-link span, .github-link span,
-  .resume-link span, .email-link span {
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 10em;
-    padding: .5em .5em; }
   .linkedin-link a, .github-link a,
   .resume-link a, .email-link a {
     text-decoration: none;
-    color: lightcyan; }
+    color: #fff; }
+  .linkedin-link a:hover, .github-link a:hover,
+  .resume-link a:hover, .email-link a:hover {
+    color: lightgray; }
   .linkedin-link i, .github-link i,
   .resume-link i, .email-link i {
     font-size: 1.5em; }
@@ -89,11 +87,12 @@ h1, h2 {
 .about-text {
   padding: 3.5em 0 0; }
 
-.services-section {
+.skills-section {
   margin: 8em 0 0; }
-  .services-section h1 {
-    text-align: center; }
-  .services-section .container {
+  .skills-section h1, .skills-section p, .skills-section div {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.3); }
+  .skills-section .container {
     position: relative;
     background-image: linear-gradient(176deg, darkturquoise 70%, #fff calc(70% + 2px));
     -webkit-background-image: linear-gradient(176deg, darkturquoise 70%, #fff calc(70% + 2px));
@@ -109,12 +108,9 @@ h1, h2 {
   grid-template-rows: 11em 11em 11em 8em;
   justify-content: center;
   list-style: none; }
-  .skills-item-list li {
-    flex: .2; }
-  .skills-item-list p, .skills-item-list div {
-    text-align: center; }
   .skills-item-list i {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    color: lightgray; }
   .skills-item-list .fa-mobile-alt {
     font-size: 1.5em; }
   .skills-item-list .fa-tablet-alt {
@@ -139,17 +135,18 @@ h1, h2 {
 
 .project-wrapper {
   background: whitesmoke;
-  width: 65%;
+  width: 70%;
+  margin: 3em;
   border-radius: 1em;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
   .project-wrapper img {
-    width: 85%;
+    width: 90%;
     border-radius: 1em;
     position: relative;
     margin: -1em -1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
   .project-wrapper .text {
-    font-size: .75em;
+    font-size: .85em;
     margin: 0 auto;
     width: 75%; }
 
