@@ -18,7 +18,8 @@ h1, h2 {
 .main-wrapper {
   display: block;
   position: relative;
-  margin: 0 -8px 0 15em; }
+  margin: 0 -8px 0 14.55em;
+  top: -1.35em; }
 
 .side-bar-container {
   display: flex;
@@ -26,10 +27,7 @@ h1, h2 {
   left: 0;
   top: 0;
   height: 100%;
-  box-shadow: 0 0 10px black;
-  -moz-box-shadow: 0 0 10px black;
-  -webkit-box-shadow: 0 0 10px black;
-  background-color: lightcoral;
+  background-color: #314455;
   width: 15em; }
 
 .nav-list-container {
@@ -68,35 +66,34 @@ h1, h2 {
   .resume-link i, .email-link i {
     font-size: 1.5em; }
 
-.about-section {
-  margin: 2em 0; }
-  .about-section hr {
-    margin: 6em auto;
-    border: solid lightgray .1px;
-    width: 25%;
-    box-shadow: 0px 2px 11px black; }
+.header-section {
+  background-image: linear-gradient(-176deg, #9E5A63 70%, #fff calc(70% + 2px));
+  text-align: center;
+  height: 220px; }
+  .header-section h4 {
+    color: #97AABD; }
 
 .bold-text-about {
-  position: absolute;
+  position: relative;
+  margin: 0;
   font-size: 10em;
-  top: -1.35em;
+  top: .65em;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.08);
   text-transform: uppercase; }
 
-.about-text {
-  padding: 3.5em 0 0; }
-
 .skills-section {
   margin: 8em 0 0; }
-  .skills-section h1, .skills-section p, .skills-section div {
+  .skills-section h2, .skills-section p, .skills-section div {
     text-align: center;
     color: rgba(0, 0, 0, 0.3); }
+  .skills-section h2 {
+    color: #314455; }
   .skills-section .container {
     position: relative;
-    background-image: linear-gradient(176deg, darkturquoise 70%, #fff calc(70% + 2px));
-    -webkit-background-image: linear-gradient(176deg, darkturquoise 70%, #fff calc(70% + 2px));
-    -moz-background-image: linear-gradient(176deg, darkturquoise 70%, #fff calc(70% + 2px)); }
+    background-image: linear-gradient(176deg, #97AABD 70%, #fff calc(70% + 2px));
+    -webkit-background-image: linear-gradient(176deg, #97AABD 70%, #fff calc(70% + 2px));
+    -moz-background-image: linear-gradient(176deg, #97AABD 70%, #fff calc(70% + 2px)); }
 
 .skills-wrapper {
   margin: .5em auto; }
