@@ -21,6 +21,7 @@ h1, h2 {
 	font-weight: 800;
 	font-size: 2em;
 }
+h3, h4, h5 { color: #314455; }
 
 // .logo {
 // 	background: lightcyan;
@@ -107,10 +108,14 @@ h1, h2 {
 	background-image: linear-gradient(-176deg, #9E5A63 70%, #fff calc(70% + 2px));
 	text-align: center;
 	height: 220px;
-		h4 { color: #97AABD; }
 }
 
 // ABOUT SECTION
+.about-section {
+	margin: 0 auto;
+	width: 95%;
+}
+
 .bold-text-about {
 	position: relative;
 	margin: 0;
@@ -128,7 +133,6 @@ h1, h2 {
 		text-align: center;
 		color: rgba(0,0,0,.3);
 	}
-	h2 { color: #314455; }
 	.container {
 		position: relative;
 		background-image: linear-gradient(176deg, #97AABD 70%, #fff calc(70% + 2px));
@@ -149,7 +153,7 @@ h1, h2 {
 	list-style: none;
 		i {
 			font-size: 2.5em;
-			color: lightgray;
+			color: #314455;
 		}
 		.fa-mobile-alt { font-size: 1.5em; }
 		.fa-tablet-alt { font-size: 1.8em; }
