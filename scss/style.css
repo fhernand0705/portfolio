@@ -18,12 +18,6 @@ h1, h2 {
 h3, h4, h5 {
   color: #314455; }
 
-.main-wrapper {
-  display: block;
-  position: relative;
-  margin: 0 -8px 0 14.55em;
-  top: -1.35em; }
-
 .side-bar-container {
   display: flex;
   position: fixed;
@@ -43,11 +37,11 @@ h3, h4, h5 {
   list-style-type: none;
   color: whitesmoke; }
   .nav-list-container img {
-    border-radius: 4em;
+    border-radius: 6em;
     width: 80%; }
   .nav-list-container hr {
     border: solid .5px;
-    margin: .5em auto;
+    margin: 2em auto;
     width: 100%; }
 
 .name-text, .dev-text, .headshot {
@@ -69,8 +63,14 @@ h3, h4, h5 {
   .resume-link i, .email-link i {
     font-size: 1.5em; }
 
+.main-wrapper {
+  display: block;
+  position: relative;
+  margin: 0 -8px 0 14.55em;
+  top: -1.35em; }
+
 .header-section {
-  background-image: linear-gradient(-176deg, #9E5A63 70%, #fff calc(70% + 2px));
+  background-image: linear-gradient(-176deg, #9E5A63 75%, #fff calc(75% + 2px));
   text-align: center;
   height: 220px; }
 
