@@ -18,7 +18,7 @@ h1, h2 {
 h3, h4, h5 {
   color: #314455; }
 
-.side-bar-container {
+.sidebar-container {
   display: flex;
   position: fixed;
   left: 0;
@@ -27,7 +27,7 @@ h3, h4, h5 {
   background-color: #314455;
   width: 15em; }
 
-.nav-list-container {
+.navbar-list-container {
   display: flex;
   flex-direction: column;
   font-size: .85em;
@@ -36,10 +36,10 @@ h3, h4, h5 {
   padding: 0 1em;
   list-style-type: none;
   color: whitesmoke; }
-  .nav-list-container img {
+  .navbar-list-container img {
     border-radius: 6em;
     width: 80%; }
-  .nav-list-container hr {
+  .navbar-list-container hr {
     border: solid .5px;
     margin: 2em auto;
     width: 100%; }
@@ -68,6 +68,41 @@ h3, h4, h5 {
   position: relative;
   margin: 0 -8px 0 14.55em;
   top: -1.35em; }
+
+.mobile-navbar-container {
+  display: flex;
+  flex-direction: column;
+  background: black; }
+
+.navbar-list {
+  display: flex;
+  list-style: none; }
+  .navbar-list li {
+    flex: 1; }
+
+.headshot-img {
+  flex: 1; }
+
+.menu-icon-wrapper {
+  flex: .3 !important; }
+
+.menu-bars-container {
+  border-radius: 5em;
+  border: solid whitesmoke;
+  margin: .5em 2em;
+  height: 3em;
+  width: 3em; }
+
+.bar1, .bar2, .bar3 {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  border-radius: 5em;
+  background-color: #fff;
+  left: .6em;
+  top: .5em;
+  margin: 6px 0;
+  transition: 0.4s; }
 
 .header-section {
   background-image: linear-gradient(-176deg, #9E5A63 75%, #fff calc(75% + 2px));

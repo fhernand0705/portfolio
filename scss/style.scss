@@ -51,7 +51,7 @@ h3, h4, h5 { color: #314455; }
 // }
 
 // SIDEBAR
-.side-bar-container {
+.sidebar-container {
 	display: flex;
 	position: fixed;
 	left: 0;
@@ -61,7 +61,7 @@ h3, h4, h5 { color: #314455; }
 	width: 15em;
 }
 
-.nav-list-container {
+.navbar-list-container {
 	display: flex;
 	flex-direction: column;
 	font-size: .85em;
@@ -102,6 +102,42 @@ h3, h4, h5 { color: #314455; }
   position: relative;
   margin: 0 -8px 0 14.55em;
 	top: -1.35em
+}
+
+// NAVBAR FOR MOBILE
+.mobile-navbar-container {
+	display: flex;
+	flex-direction: column;
+	background: black;
+}
+
+.navbar-list {
+	display: flex;
+	list-style: none;
+		li { flex: 1; }
+}
+
+.headshot-img { flex: 1; }
+.menu-icon-wrapper { flex: .3 !important; }
+
+.menu-bars-container {
+	border-radius: 5em;
+  border: solid whitesmoke;
+  margin: .5em 2em;
+  height: 3em;
+  width: 3em;
+}
+
+.bar1, .bar2, .bar3 {
+	position: relative;
+	width: 30px;
+  height: 4px;
+	border-radius: 5em;
+  background-color: #fff;
+	left: .6em;
+	top: .5em;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
 // HEADER SECTION
