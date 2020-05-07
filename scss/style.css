@@ -82,11 +82,16 @@ h3, h4, h5 {
 
 .headshot-img {
   flex: 1; }
+  .headshot-img img {
+    width: 22%;
+    border-radius: 2em;
+    margin: .5em 0; }
 
 .menu-icon-wrapper {
   flex: .3 !important; }
 
 .menu-bars-container {
+  cursor: pointer;
   border-radius: 5em;
   border: solid whitesmoke;
   margin: .5em 2em;

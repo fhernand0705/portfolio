@@ -23,32 +23,6 @@ h1, h2 {
 }
 h3, h4, h5 { color: #314455; }
 
-// .logo {
-// 	background: lightcyan;
-//     width: 5.5%;
-//     height: 43px;
-//     border-bottom-left-radius: 1.5em;
-//     border-bottom-right-radius: 1.5em;
-//     transform: translate(-4px, 88px) rotate(180deg);
-// }
-//
-// .logo-2 {
-// 	background: lightcoral;
-// 		width: 5.5%;
-// 		height: 39px;
-// 		border-bottom-left-radius: 1.5em;
-// 		border-bottom-right-radius: 1.5em;
-// 		transform: translate(19px, 5px);
-// }
-//
-// .eye {
-// 	border-radius: 0px 100% 0px 0px;
-// width: 12%;
-// height: 43px;
-// background: darkturquoise;
-// transform: rotate(90deg) translate(0px, 45px);
-// position: absolute;
-// }
 
 // SIDEBAR
 .sidebar-container {
@@ -117,10 +91,18 @@ h3, h4, h5 { color: #314455; }
 		li { flex: 1; }
 }
 
-.headshot-img { flex: 1; }
+.headshot-img {
+	flex: 1;
+		img {
+			width: 22%;
+	    border-radius: 2em;
+	    margin: .5em 0;
+		}
+}
 .menu-icon-wrapper { flex: .3 !important; }
 
 .menu-bars-container {
+	cursor: pointer;
 	border-radius: 5em;
   border: solid whitesmoke;
   margin: .5em 2em;
