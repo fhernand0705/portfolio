@@ -151,11 +151,11 @@ h3, h4, h5 {
     opacity: 0; }
 
   .change .bar1 {
-    transform: rotate(-37deg) translate(4px, 4px);
+    transform: rotate(-41deg) translate(4px, 4px);
     height: 30px; }
 
   .change .bar2 {
-    transform: rotate(127deg) translate(12px, -1px);
+    transform: rotate(128deg) translate(11px, -1px);
     width: 30px; }
 
   .overlay-container {
@@ -168,20 +168,27 @@ h3, h4, h5 {
     transition: all .5s; }
 
   .overlay-content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     opacity: 0;
+    top: 4.5em;
     position: relative;
-    width: 0;
-    top: 5em;
+    width: 100%;
     text-align: center;
     margin: 2em 0; }
+    .overlay-content h5 {
+      color: #9E5A63 !important;
+      margin: 0; }
+    .overlay-content h4 {
+      color: whitesmoke !important;
+      margin: 0 0 2em; }
 
-  .overlay-link {
-    display: grid;
-    grid-template-columns: 2em 0; }
-    .overlay-link a {
-      color: whitesmoke;
-      font-size: 1em; }
+  .overlay-link a {
+    color: whitesmoke;
+    font-size: 1em; }
+  .overlay-link a:hover {
+    color: #97AABD; }
 
   .active {
     height: 100%;
