@@ -68,7 +68,7 @@ h3, h4, h5 {
       color: #fff; }
     .linkedin-link a:hover, .github-link a:hover,
     .resume-link a:hover, .email-link a:hover {
-      color: lightgray; }
+      color: #97AABD; }
     .linkedin-link i, .github-link i,
     .resume-link i, .email-link i {
       font-size: 1.5em; } }
@@ -177,10 +177,10 @@ h3, h4, h5 {
     width: 100%;
     text-align: center;
     margin: 2em 0; }
-    .overlay-content h5 {
+    .overlay-content h4 {
       color: #9E5A63 !important;
       margin: 0; }
-    .overlay-content h4 {
+    .overlay-content h3 {
       color: whitesmoke !important;
       margin: 0 0 2em; }
 

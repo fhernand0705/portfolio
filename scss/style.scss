@@ -101,9 +101,9 @@ h3, h4, h5 { color: #314455; }
 		margin: .5em .5em;
 			a {
 				text-decoration: none;
-				color: #fff;
+				color: $white;
 			}
-			a:hover { color: lightgray; }
+			a:hover { color: $lightBlue; }
 			i {	font-size: 1.5em; }
 	}
 }
@@ -228,11 +228,11 @@ h3, h4, h5 { color: #314455; }
 		text-align: center;
 		margin: 2em 0;
 		// add width conditionally
-		h5 {
+		h4 {
 			color: $red !important;
 			margin: 0;
 		}
-		h4 {
+		h3 {
 			color: whitesmoke !important;
 			margin: 0 0 2em;
 		}
