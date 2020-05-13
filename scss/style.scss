@@ -1,4 +1,5 @@
 $font-primary: 'Poppins', Arial, sans-serif;
+$base-font-size: 1.125em;
 
 $white: #fff;
 $black: #121212;
@@ -32,7 +33,7 @@ $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 body {
 	font-family: $font-primary;
 	background: $white;
-	font-size: 18px;
+	font-size: $base-font-size;
 	line-height: 1.8;
 	font-weight: 400;
 	color: darken($white,45%);
@@ -70,6 +71,8 @@ h3, h4, h5 { color: #314455; }
 		background-color: #314455;
 		width: 15em;
 		transition: all .5s ease-out;
+
+		@media (min-width: 120em) { width: 17.5em; }
 	}
 
 	.navbar-list-container {
@@ -90,6 +93,8 @@ h3, h4, h5 { color: #314455; }
 			margin: 2em auto;
 			width: 100%;
 		}
+
+		@media (min-width: 120em) { font-size: .85em * 1.18; }
 	}
 
 	.name-text, .dev-text, .headshot { text-align: center; }
@@ -119,9 +124,9 @@ h3, h4, h5 { color: #314455; }
 		margin: 0;
 	}
 
-	// @media #{$mq-large} {
-	// 	margin: 0 10.5%;
-	// }
+	@media (min-width: 120em) {
+		margin: 0 0 0 17.5em;
+	}
 	//
 	// @media #{$mq-xlarge} {
 	// 	margin: 0 16.5%;
@@ -227,7 +232,6 @@ h3, h4, h5 { color: #314455; }
 		width: 100%;
 		text-align: center;
 		margin: 2em 0;
-		// add width conditionally
 		h4 {
 			color: $red !important;
 			margin: 0;
@@ -263,6 +267,11 @@ h3, h4, h5 { color: #314455; }
 	@media (min-width: 20em) and (max-width: 52.5em) {
 		height: 20em;
 	}
+
+	@media (min-width: 120em) {
+		height: 20em;
+		.container { font-size: $base-font-size * 1.06; }
+	}
 }
 
 // ABOUT SECTION
@@ -274,7 +283,6 @@ h3, h4, h5 { color: #314455; }
 .bold-text-about {
 	position: relative;
 	margin: 0;
-	font-size: 10em;
 	top: .65em;
 	font-weight: 700;
 	color: rgba(0, 0, 0, 0.08);
@@ -291,12 +299,15 @@ h3, h4, h5 { color: #314455; }
 		font-size: 7.5em;
 		top: 0.7em;
 	}
+
+	@media (min-width: 120em) { font-size: 7.5em * 1.066; }
 }
 
 .about-text p {
 	@media (min-width: 20em) and (max-width: 34.375em) {
 		text-align: center;
 	}
+	@media (min-width: 120em) { font-size: $base-font-size * 1.066; }
 }
 
 // SKILLS SECTION
@@ -318,6 +329,7 @@ h3, h4, h5 { color: #314455; }
 	@media (min-width: 20em) and (max-width: 52.5em) {
 		font-size: 1.5em;
 	}
+	@media (min-width: 120em) { font-size: 2em * 1.25; }
 }
 
 .skills-wrapper {
@@ -344,8 +356,12 @@ h3, h4, h5 { color: #314455; }
 	}
 
 	@media (min-width: 46.875em) {
-		grid-template-columns: 8em 8em 8em 8em;
+		grid-template-columns: 8em 9em 8em 8em;
 		grid-template-rows: 11em 11em 11em 11em;
+	}
+
+	@media (min-width: 120em) {
+		grid-template-columns: 11em 11em 11em 11em;
 	}
 	i {
 		font-size: 2.5em;
@@ -371,6 +387,8 @@ h3, h4, h5 { color: #314455; }
 .project-header-section {
 	text-align: center;
 	margin: 0 0 2em;
+
+	@media (min-width: 120em) { font-size: 1.2em; }
 }
 
 .project-wrapper {
@@ -402,6 +420,8 @@ h3, h4, h5 { color: #314455; }
 			margin: .5em 0;
 			width: 97%;
 		}
+
+		@media (min-width: 120em) { width: 80%; }
 	}
 
 	.text {
@@ -413,5 +433,7 @@ h3, h4, h5 { color: #314455; }
 			text-align: center;
 			width: 90%;
 		}
+
+		@media (min-width: 120em) { font-size: $base-font-size * 1.066; }
 	}
 }

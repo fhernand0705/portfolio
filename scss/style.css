@@ -1,7 +1,7 @@
 body {
   font-family: "Poppins", Arial, sans-serif;
   background: #fff;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 1.8;
   font-weight: 400;
   color: #8c8c8c;
@@ -35,8 +35,12 @@ h3, h4, h5 {
     height: 100%;
     background-color: #314455;
     width: 15em;
-    transition: all .5s ease-out; }
+    transition: all .5s ease-out; } }
+  @media (min-width: 52.5em) and (min-width: 120em) {
+    .sidebar-container {
+      width: 17.5em; } }
 
+@media (min-width: 52.5em) {
   .navbar-list-container {
     display: flex;
     flex-direction: column;
@@ -52,8 +56,12 @@ h3, h4, h5 {
     .navbar-list-container hr {
       border: solid .5px;
       margin: 2em auto;
-      width: 100%; }
+      width: 100%; } }
+  @media (min-width: 52.5em) and (min-width: 120em) {
+    .navbar-list-container {
+      font-size: 1.003em; } }
 
+@media (min-width: 52.5em) {
   .name-text, .dev-text, .headshot {
     text-align: center; }
 
@@ -80,6 +88,9 @@ h3, h4, h5 {
   @media (min-width: 20em) and (max-width: 52.5em) {
     .main-wrapper {
       margin: 0; } }
+  @media (min-width: 120em) {
+    .main-wrapper {
+      margin: 0 0 0 17.5em; } }
 
 .mobile-navbar-container {
   display: none;
@@ -202,6 +213,11 @@ h3, h4, h5 {
   @media (min-width: 20em) and (max-width: 52.5em) {
     .header-section {
       height: 20em; } }
+  @media (min-width: 120em) {
+    .header-section {
+      height: 20em; }
+      .header-section .container {
+        font-size: 1.1925em; } }
 
 .about-section {
   margin: 0 auto;
@@ -210,7 +226,6 @@ h3, h4, h5 {
 .bold-text-about {
   position: relative;
   margin: 0;
-  font-size: 10em;
   top: .65em;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.08);
@@ -225,10 +240,16 @@ h3, h4, h5 {
       text-align: unset;
       font-size: 7.5em;
       top: 0.7em; } }
+  @media (min-width: 120em) {
+    .bold-text-about {
+      font-size: 7.995em; } }
 
 @media (min-width: 20em) and (max-width: 34.375em) {
   .about-text p {
     text-align: center; } }
+@media (min-width: 120em) {
+  .about-text p {
+    font-size: 1.19925em; } }
 
 .skills-section {
   margin: 8em 0 0; }
@@ -244,6 +265,9 @@ h3, h4, h5 {
 @media (min-width: 20em) and (max-width: 52.5em) {
   .skills-header {
     font-size: 1.5em; } }
+@media (min-width: 120em) {
+  .skills-header {
+    font-size: 2.5em; } }
 
 .skills-wrapper {
   margin: .5em auto; }
@@ -266,8 +290,11 @@ h3, h4, h5 {
       grid-template-rows: 9em 9em 9em 9em 12em; } }
   @media (min-width: 46.875em) {
     .skills-item-list {
-      grid-template-columns: 8em 8em 8em 8em;
+      grid-template-columns: 8em 9em 8em 8em;
       grid-template-rows: 11em 11em 11em 11em; } }
+  @media (min-width: 120em) {
+    .skills-item-list {
+      grid-template-columns: 11em 11em 11em 11em; } }
   .skills-item-list i {
     font-size: 2.5em;
     color: #314455; }
@@ -292,6 +319,9 @@ h3, h4, h5 {
 .project-header-section {
   text-align: center;
   margin: 0 0 2em; }
+  @media (min-width: 120em) {
+    .project-header-section {
+      font-size: 1.2em; } }
 
 .project-wrapper {
   background: whitesmoke;
@@ -316,6 +346,9 @@ h3, h4, h5 {
       .project-wrapper img {
         margin: .5em 0;
         width: 97%; } }
+    @media (min-width: 120em) {
+      .project-wrapper img {
+        width: 80%; } }
   .project-wrapper .text {
     font-size: .85em;
     margin: 0 auto;
@@ -324,5 +357,8 @@ h3, h4, h5 {
       .project-wrapper .text {
         text-align: center;
         width: 90%; } }
+    @media (min-width: 120em) {
+      .project-wrapper .text {
+        font-size: 1.19925em; } }
 
 /*# sourceMappingURL=style.css.map */
