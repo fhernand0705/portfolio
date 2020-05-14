@@ -332,6 +332,7 @@ h3, h4, h5 {
   background: whitesmoke;
   width: 75%;
   margin: 3em;
+  z-index: 2;
   border-radius: 1em;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
   @media (min-width: 20em) and (max-width: 34.375em) {
