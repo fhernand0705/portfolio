@@ -269,8 +269,12 @@ h3, h4, h5 { color: #314455; }
 	}
 
 	@media (min-width: 120em) {
-		height: 20em;
-		.container { font-size: $base-font-size * 1.06; }
+		height: 27em;
+		.container {
+			font-size: $base-font-size * 1.066;
+			position: relative;
+			top: 2em;
+		}
 	}
 }
 
@@ -278,6 +282,8 @@ h3, h4, h5 { color: #314455; }
 .about-section {
 	margin: 0 auto;
 	width: 95%;
+
+	@media (min-width: 120em) { width: 90%; }
 }
 
 .bold-text-about {
@@ -401,6 +407,10 @@ h3, h4, h5 { color: #314455; }
 	@media (min-width: 20em) and (max-width: 34.375em) {
 		width: 100%;
 		margin: 2em;
+	}
+
+	@media (min-width: 120em) {
+		width: 60%;
 	}
 
 	.img-wrapper {
