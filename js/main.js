@@ -1,4 +1,3 @@
-
 const menuIcon = document.querySelector("#menu-icon");
 
 menuIcon.addEventListener('click', ({target}) => {
