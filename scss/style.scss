@@ -457,7 +457,9 @@ h3, h4, h5 { color: #314455; }
 		}
 		&--copy {
 			display: flex;
-			gap: 3.5rem;
+			gap: 15px;
+			margin-bottom: 15px;
+			width: 100%;
 			div {
 				margin-bottom: 15px;
 			}
@@ -477,8 +479,9 @@ h3, h4, h5 { color: #314455; }
 			h4, p {
 				margin: 0;
 			}
-			margin-bottom: 15px;
-			width: 75%;
+			@media (min-width: 1200px) {
+				gap: 50px;
+			}
 			@media (min-width: 20em) and (max-width: 55em) {
 				gap: 0;
 				flex-direction: column;
