@@ -493,9 +493,9 @@ h3, h4, h5 {
 }
 .project__body--copy {
   display: flex;
-  gap: 3.5rem;
+  gap: 15px;
   margin-bottom: 15px;
-  width: 75%;
+  width: 100%;
 }
 .project__body--copy div {
   margin-bottom: 15px;
@@ -515,6 +515,11 @@ h3, h4, h5 {
 }
 .project__body--copy h4, .project__body--copy p {
   margin: 0;
+}
+@media (min-width: 1200px) {
+  .project__body--copy {
+    gap: 50px;
+  }
 }
 @media (min-width: 20em) and (max-width: 55em) {
   .project__body--copy {
