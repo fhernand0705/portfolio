@@ -41,13 +41,8 @@ h3, h4, h5 {
     top: 0;
     height: 100vh;
     background-color: #314455;
-    width: 15em;
+    width: 17em;
     transition: 0.4s ease-in-out;
-  }
-}
-@media (min-width: 120em) {
-  .sidebar-container {
-    width: 15em;
   }
 }
 
@@ -60,9 +55,10 @@ h3, h4, h5 {
     padding: 0 1em;
     list-style-type: none;
     color: whitesmoke;
-  }
-  .navbar-list-container .sidebar-text {
     font-size: 0.85em;
+  }
+  .navbar-list-container .headshot {
+    border-radius: 50%;
   }
   .navbar-list-container img {
     border-radius: 6em;
@@ -76,49 +72,42 @@ h3, h4, h5 {
 }
 @media (min-width: 52.5em) and (min-width: 120em) {
   .navbar-list-container {
-    font-size: 1.003em;
+    font-size: 0.935em;
   }
 }
 @media (min-width: 52.5em) {
   .name-text, .dev-text, .headshot {
     text-align: center;
   }
-}
-@media (min-width: 52.5em) {
   .linkedin-link, .github-link,
-.resume-link, .email-link {
+  .resume-link, .email-link {
     display: grid;
     grid-template-columns: 2em 0;
     margin: 0.5em 0.5em;
   }
   .linkedin-link a, .github-link a,
-.resume-link a, .email-link a {
+  .resume-link a, .email-link a {
     text-decoration: none;
     color: #fff;
   }
   .linkedin-link a:hover, .github-link a:hover,
-.resume-link a:hover, .email-link a:hover {
+  .resume-link a:hover, .email-link a:hover {
     color: #bfbfbf;
   }
   .linkedin-link i, .github-link i,
-.resume-link i, .email-link i {
+  .resume-link i, .email-link i {
     font-size: 1.5em;
   }
 }
 .main-wrapper {
   display: grid;
   grid-template-columns: 100%;
-  margin: 0 0 0 15em;
+  margin-left: 17em;
   transition: 0.4s ease-in-out;
 }
 @media (min-width: 20em) and (max-width: 52.5em) {
   .main-wrapper {
     margin: 0;
-  }
-}
-@media (min-width: 120em) {
-  .main-wrapper {
-    margin: 0 0 0 12%;
   }
 }
 
@@ -281,7 +270,7 @@ h3, h4, h5 {
   margin: 0;
   top: 0.65em;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
 }
 @media (min-width: 20em) {
@@ -324,9 +313,18 @@ h3, h4, h5 {
 }
 .skills-section .container {
   position: relative;
-  background-image: linear-gradient(176deg, #97AABD 70%, #fff calc(70% + 2px));
-  -webkit-background-image: linear-gradient(176deg, #97AABD 70%, #fff calc(70% + 2px));
-  -moz-background-image: linear-gradient(176deg, #97AABD 70%, #fff calc(70% + 2px));
+}
+@media (max-width: 71.88em) {
+  .skills-section .container {
+    background: #97AABD;
+  }
+}
+@media (min-width: 71.88em) {
+  .skills-section .container {
+    background-image: linear-gradient(176deg, #97AABD 70%, #fff calc(70% + 2px));
+    -webkit-background-image: linear-gradient(176deg, #97AABD 70%, #fff calc(70% + 2px));
+    -moz-background-image: linear-gradient(176deg, #97AABD 70%, #fff calc(70% + 2px));
+  }
 }
 
 @media (min-width: 20em) and (max-width: 52.5em) {
@@ -408,6 +406,11 @@ h3, h4, h5 {
 .project-header-section {
   text-align: center;
   margin: 0 0 2em;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.project-header-section h3 {
+  font-size: 25px;
 }
 @media (min-width: 120em) {
   .project-header-section {
@@ -421,7 +424,7 @@ h3, h4, h5 {
   margin: 3em;
   z-index: 2;
   border-radius: 1em;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 17.5px rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 20em) and (max-width: 34.375em) {
   .project {
@@ -437,6 +440,31 @@ h3, h4, h5 {
 @media (min-width: 20em) and (max-width: 34.375em) {
   .project__img-wrapper {
     text-align: center;
+  }
+}
+.project .project__img--3up {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.project .project__img--3up img {
+  width: 250px;
+}
+@media (min-width: 1200px) {
+  .project .project__img--3up img {
+    width: calc((60% - 5px) / 2);
+    max-width: calc((60% - 5px) / 2);
+  }
+}
+@media (min-width: 550px) {
+  .project .project__img--3up {
+    gap: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .project .project__img--3up {
+    flex-direction: row;
   }
 }
 .project img {
@@ -460,7 +488,7 @@ h3, h4, h5 {
 .project__body {
   margin: 3rem;
 }
-.project__body a > h3 {
+.project__body a > h3, .project__body h3 {
   color: #9E5A63;
 }
 .project__body--copy {
