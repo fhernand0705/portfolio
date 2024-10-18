@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root {
+  --burnt-orange: #CC5500; 
+  --brown: #964B00;
+  --ivory: #FFFFF0;
+  --olive: #808000;
+  --dark-blue: #242F40;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  padding-top: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header .container .row {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.header .logo-wrapper a {
+  display: block;
+  width: fit-content;
+  -moz-width: fit-content;
 }
 
-.App-link {
-  color: #61dafb;
+.header .header-links-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .header-links-wrapper li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+/* short intro */
+.short-intro {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.short-intro h1 {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  color: var(--dark-blue);
 }
