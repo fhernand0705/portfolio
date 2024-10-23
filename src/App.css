@@ -129,15 +129,32 @@ h1, h2, h3 {
   padding-bottom: 50px;
 }
 .skills-header {
+  display: flex;
+  justify-content: center;
   padding-bottom: 50px;
 }
 .skills-header h2 {
+  font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
+}
+.skills-header h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25%;
+  height: 2px;
+  background-color: var(--burnt-orange);
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 .skills-cards {
   display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0;
 }
 .skills-cards .skills-icon {
   display: inline-block;
@@ -145,13 +162,14 @@ h1, h2, h3 {
   border-radius: 50%;
   padding: .5em;
 }
-.skills-card--left {
-  text-align: center;
-  border-bottom: 1px solid var(--dark-blue);
-  border-right: none;
+.skills-cards .divider {
+  height: 1px;
+  background-color: var(--burnt-orange);
 }
-.skills-card--right {
+.skills-card--left, .skills-card--right {
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .skills-card--left h3, .skills-card--right h3 {
   font-weight: 700;
@@ -183,8 +201,16 @@ h1, h2, h3 {
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  .skills-card--left {
-    border-right: 1px solid var(--dark-blue);
-    border-bottom: none;
+  .skills-header h2 {
+    font-size: 38px;
+  }
+  .skills-cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .skills-cards .divider {
+    width: 1px;
+    height: 50%;
+    margin: auto 0;
   }
 }

@@ -51,7 +51,7 @@ function App() {
               <h2>Skills</h2>
             </div>
             <div className='skills-cards'>
-              <div className='skills-card--left col-12 col-lg-6'>
+              <div className='skills-card--left col-12 col-lg-5'>
                 <i className='skills-icon'><HiOutlineSquare3Stack3D style={{color: '#242F40', width: '50px', height: '50px'}}/></i>
                 <h3>Frontend</h3>
                 <h5>Languages</h5>
@@ -71,10 +71,10 @@ function App() {
                   <li>JQuery</li>
                   <li>Bootstrap</li>
                   <li>NPM</li>
-                  <li>Composer</li>
                 </ul>
               </div>
-              <div className='skills-card--right col-12 col-lg-6'>
+              <div className='col-12 col-lg-2 divider'></div>
+              <div className='skills-card--right col-12 col-lg-5'>
                 <i className='skills-icon'><PiStackPlus style={{color: '#242F40', width: '50px', height: '50px'}}/></i>
                 <h3>Backend</h3>
                 <h5>Languages</h5>
