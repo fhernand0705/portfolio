@@ -126,7 +126,7 @@ h1, h2, h3 {
 /* skills */
 .skills {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 .skills-header {
   display: flex;
@@ -199,7 +199,7 @@ h1, h2, h3 {
 @media (min-width: 992px) {
   .skills {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
   }
   .skills-header h2 {
     font-size: 38px;
@@ -213,4 +213,70 @@ h1, h2, h3 {
     height: 50%;
     margin: auto 0;
   }
+}
+/* projects */
+.projects {
+  padding-bottom: 100px;
+}
+.projects .row {
+  row-gap: 15px;
+}
+.projects-header {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.projects-header h1 {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+.project-card {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+.project-card .project-card-img {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+.project-card .project-card-img img {
+  object-fit: contain;
+  width: 250px;
+  height: auto;
+}
+.project-card-content {
+  padding: 20px 20px;
+  height: 250px;
+}
+.project-card-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 8px;
+  border-radius: 12px 0 0;
+  background-color: var(--ivory);
+}
+.project-card-banner .project-card-kicker {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+  color: var(--dark-blue);
+}
+.project-card-pills {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  bottom: 20px;
+}
+.project-card-pills .project-card-pill {
+  padding: 10px 15px 10px 15px;
+  width: fit-content;
+  -moz-width: -moz-fit-content;
+  border-radius: 5rem;
+  color: var(--ivory);
+  font-weight: 600;
 }

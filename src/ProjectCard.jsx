@@ -1,0 +1,26 @@
+import React from 'react';
+
+function ProjectCard({project}) {
+    var {title, image, link, type, techStack, whatIBuilt} = project; 
+    return (
+        <div className='project-card'>
+            <div className='project-card-img' style={{backgroundColor: image.bgColor}}>
+                <div className='project-card-banner'>
+                    <h2 className='project-card-kicker'>{type}</h2>
+                </div>
+                <img src={require(`${image.src}`)} alt={image.alt} />
+            </div>
+            <div className='project-card-content'>
+                <h2 className='project-card-title'>{title}</h2>
+                {/* <h3>Built with</h3> */}
+                <ul className='project-card-pills'>
+                    {techStack.length > 0 && techStack.map(tech => 
+                        <li className='project-card-pill' style={{backgroundColor: image.bgColor}}>{tech}</li>
+                    )}
+                </ul>
+            </div>
+        </div>
+    )
+}
+
+export default ProjectCard; 

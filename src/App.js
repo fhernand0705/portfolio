@@ -5,6 +5,8 @@ import { ReactComponent as LogoWithoutIcon } from './portfolio-logo-without-icon
 import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
 import { PiStackPlus } from "react-icons/pi";
 import { HashLink as Link } from 'react-router-hash-link';
+import ProjectCard from './ProjectCard';
+import { projects } from './data'; 
 
 function App() {
   return (
@@ -21,14 +23,13 @@ function App() {
           </ul>
         </nav>
       </header>
-      {/* <iframe src="/public/Freddy Hernandez Resume 2024.pdf" title="Resume" width="100%" height="600px"></iframe> */}
       <section className='short-intro'>
         <div className='container'>
           <div className='row'>
             <h1><span><LogoWithoutIcon /></span>ull Stack Developer</h1>
             <p>I build interactive and accessible digital experiences for clients across major industries.</p>
             <div className="col-12 short-intro-img">
-              <img src="/images/portfolio graphic.png" alt="" />
+              <img src={require("./images/portfolio graphic.png")} alt="" />
             </div>
           </div>
         </div>
@@ -91,6 +92,20 @@ function App() {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className='projects'>
+        <div className='container'>
+          <div className='row'>
+            <header className='projects-header'>
+              <h1>My Recent Client Projects</h1>
+            </header>
+            {projects && projects.length > 0 && projects.map(project => 
+              <div className='col-lg-4'>
+                <ProjectCard project={project} />
+              </div>
+            )}
           </div>
         </div>
       </section>
