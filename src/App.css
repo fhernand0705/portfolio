@@ -30,7 +30,7 @@ h1, h2, h3 {
 .header .header-links-wrapper li a {
   position: relative;
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--dark-blue);
 }
@@ -188,7 +188,7 @@ h1, h2, h3 {
   gap: 20px;
 }
 .skills-languages li, .skills-tools li {
-  padding: 10px 15px 10px 15px;
+  padding: 5px 15px 5px 15px;
   width: fit-content;
   -moz-width: fit-content;
   background-color: var(--dark-blue);
@@ -219,7 +219,7 @@ h1, h2, h3 {
   padding-bottom: 100px;
 }
 .projects .row {
-  row-gap: 15px;
+  row-gap: 24px;
 }
 .projects-header {
   text-align: center;
@@ -243,7 +243,7 @@ h1, h2, h3 {
 }
 .project-card .project-card-img img {
   object-fit: contain;
-  width: 250px;
+  width: 225px;
   height: auto;
 }
 .project-card-content {
@@ -271,14 +271,13 @@ h1, h2, h3 {
 } */
 .project-card-content .project-card-title, .project-card-content .project-card-title-link {
   font-size: 22px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
+.project-card-content .project-card-title-link,
 .project-card-content .project-card-title {
-  color: var(--dark-blue);
-}
-.project-card-content .project-card-title-link {
-  color: rgb(95,95,95);
-  transition: width .3s ease;
+  color: gray;
+  font-weight: 400;
+  transition: all .2s ease;
 }
 .project-card-content .project-card-title-link:hover,
 .project-card-content .project-card-contributions .project-card-contributions-item a:hover {
@@ -300,11 +299,14 @@ h1, h2, h3 {
 }
 .project-card-content .project-card-contributions {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
-.project-card-content .project-card-contributions .project-card-contributions-item a {
-  color: rgb(95,95,95);
-  transition: width .3s ease;
+.project-card-content .project-card-contributions .project-card-contributions-item a,
+.project-card-content .project-card-contributions .project-card-contributions-item {
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+  transition: all .2s ease;
 }
 .project-card-banner {
   position: absolute;
@@ -315,7 +317,7 @@ h1, h2, h3 {
   background-color: var(--ivory);
 }
 .project-card-banner .project-card-kicker {
-  font-size: 16px;
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
   margin: 0;
@@ -329,7 +331,7 @@ h1, h2, h3 {
   bottom: 20px;
 }
 .project-card-pills .project-card-pill {
-  padding: 10px 15px 10px 15px;
+  padding: 5px 15px 5px 15px;
   width: fit-content;
   -moz-width: -moz-fit-content;
   border-radius: 5rem;

@@ -22,7 +22,10 @@ function ProjectCard({project}) {
                 <ul className='project-card-contributions'>
                     {myContributions.length > 0 && myContributions.map(item =>
                         <li className='project-card-contributions-item'>
-                            <a href={item.link} target='_blank' rel='noreferrer'>{item.section}</a>
+                            {link ? <a href={item.link} target='_blank' rel='noreferrer'>{item.section}</a>
+                                :
+                                item.section
+                            }           
                         </li>
                     )}
                 </ul>
