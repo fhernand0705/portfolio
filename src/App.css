@@ -30,7 +30,7 @@ h1, h2, h3 {
 .header .header-links-wrapper li a {
   position: relative;
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--dark-blue);
 }
@@ -248,7 +248,7 @@ h1, h2, h3 {
 }
 .project-card-content {
   padding: 20px 20px;
-  height: 250px;
+  height: 270px;
 }
 .project-card-content a {
   display: block;
@@ -303,7 +303,7 @@ h1, h2, h3 {
 }
 .project-card-content .project-card-contributions .project-card-contributions-item a,
 .project-card-content .project-card-contributions .project-card-contributions-item {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: gray;
   transition: all .2s ease;
@@ -317,7 +317,7 @@ h1, h2, h3 {
   background-color: var(--ivory);
 }
 .project-card-banner .project-card-kicker {
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
   margin: 0;
@@ -337,4 +337,29 @@ h1, h2, h3 {
   border-radius: 5rem;
   color: var(--ivory);
   font-weight: 600;
+}
+/* footer */
+.footer {
+  background-color: var(--burnt-orange);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer .row {
+  padding-top: 25px;
+  justify-content: center;
+}
+.footer .row li {
+  text-align: center;
+}
+.footer .footer-logo {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer .row {
+    padding-top: 50px;
+  }
 }

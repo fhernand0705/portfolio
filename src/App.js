@@ -2,8 +2,12 @@ import React from 'react';
 import './App.css';
 import { ReactComponent as Logo } from './portfolio-logo.svg';
 import { ReactComponent as LogoWithoutIcon } from './portfolio-logo-without-icon.svg'; 
+import { ReactComponent as LogoInverse } from './logo-inverse.svg'; 
 import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
 import { PiStackPlus } from "react-icons/pi";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { IoLogoGithub } from "react-icons/io";
+import { IoDocumentTextOutline } from "react-icons/io5";
 import { HashLink as Link } from 'react-router-hash-link';
 import ProjectCard from './ProjectCard';
 import { projects } from './data'; 
@@ -14,7 +18,7 @@ function App() {
       <header className="header">
         <nav className='container'>
           <ul className='row'>
-            <li className="col-6 logo-wrapper"><a href="/"><Logo /></a></li>
+            <li className="col-6 logo-wrapper"><a href="/" aria-label="Site Logo"><Logo /></a></li>
             <div className="col-6 header-links-wrapper">
               <li><Link to="#projects">Projects</Link></li>
               <li><a href="Freddy Hernandez Resume 2024.pdf" target='_blank' rel='noreferrer'>Resume</a></li>
@@ -109,6 +113,18 @@ function App() {
           </div>
         </div>
       </section>
+      <footer className='footer'>
+          <div className='container'>
+            <div className='footer-logo'>
+              <LogoInverse />
+            </div>
+            <ul className='row'>
+              <li className='col-1'><a href="mailto:fhernand0705@gmail.com" title="Email" target="_blank" rel='noreferrer' aria-label="Personal Email"><MdOutlineMailOutline style={{color: "#242F40", width: "50px", height: "auto"}} /></a></li>
+              <li className='col-1'><a href="https://github.com/fhernand0705" title="GitHub" target="_blank" rel='noreferrer' aria-label='GitHub Profile'><IoLogoGithub style={{color: "#242F40", width: "50px", height: "auto"}} /></a></li>
+              <li className='col-1'><a href="Freddy Hernandez Resume 2024.pdf" title="Resume" target="_blank" rel='noreferrer' aria-label="Resume"><IoDocumentTextOutline style={{color: "#242F40", width: "50px", height: "auto"}} /></a></li>
+            </ul>
+          </div>
+      </footer>
     </main>
   );
 }
