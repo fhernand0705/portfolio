@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import { ReactComponent as Logo } from './portfolio-logo.svg';
-import { ReactComponent as LogoWithoutIcon } from './portfolio-logo-without-icon.svg'; 
+import { ReactComponent as Logo } from './logo.svg';
+import { ReactComponent as LogoWithoutIcon } from './logo-without-icon.svg'; 
 import { ReactComponent as LogoInverse } from './logo-inverse.svg'; 
 import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
 import { PiStackPlus } from "react-icons/pi";
@@ -65,7 +65,6 @@ function App() {
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>Sass</li>
-                  <li>GIT</li>
                 </ul>
                 <h5>Tools & Frameworks</h5>
                 <ul className='skills-tools'>
@@ -76,6 +75,7 @@ function App() {
                   <li>JQuery</li>
                   <li>Bootstrap</li>
                   <li>NPM</li>
+                  <li>Git</li>
                 </ul>
               </div>
               <div className='col-12 col-lg-2 divider'></div>
@@ -92,6 +92,9 @@ function App() {
                   <li>Spring Boot</li>
                   <li>Node.js</li>
                   <li>Express</li>
+                  <li>AWS</li>
+                  <li>MySQL</li>
+                  <li>WordPress</li>
                   <li>Pantheon</li>
                 </ul>
               </div>
@@ -118,10 +121,13 @@ function App() {
             <div className='footer-logo'>
               <LogoInverse />
             </div>
+            <div className='row'>
+              <h2 className='footer-copy'>Let's work together.</h2>
+            </div>
             <ul className='row'>
-              <li className='col-1'><a href="mailto:fhernand0705@gmail.com" title="Email" target="_blank" rel='noreferrer' aria-label="Personal Email"><MdOutlineMailOutline style={{color: "#242F40", width: "50px", height: "auto"}} /></a></li>
-              <li className='col-1'><a href="https://github.com/fhernand0705" title="GitHub" target="_blank" rel='noreferrer' aria-label='GitHub Profile'><IoLogoGithub style={{color: "#242F40", width: "50px", height: "auto"}} /></a></li>
-              <li className='col-1'><a href="Freddy Hernandez Resume 2024.pdf" title="Resume" target="_blank" rel='noreferrer' aria-label="Resume"><IoDocumentTextOutline style={{color: "#242F40", width: "50px", height: "auto"}} /></a></li>
+              <li className='footer-icons'><a href="mailto:fhernand0705@gmail.com" title="Email" target="_blank" rel='noreferrer' aria-label="Personal Email"><MdOutlineMailOutline style={{color: "#242F40", width: "50px", height: "auto"}} /></a></li>
+              <li className='footer-icons'><a href="https://github.com/fhernand0705" title="GitHub" target="_blank" rel='noreferrer' aria-label='GitHub Profile'><IoLogoGithub style={{color: "#242F40", width: "50px", height: "auto"}} /></a></li>
+              <li className='footer-icons'><a href="Freddy Hernandez Resume 2024.pdf" title="Resume" target="_blank" rel='noreferrer' aria-label="Resume"><IoDocumentTextOutline style={{color: "#242F40", width: "50px", height: "auto"}} /></a></li>
             </ul>
           </div>
       </footer>
