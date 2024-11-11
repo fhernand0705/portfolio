@@ -10,7 +10,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { HashLink as Link } from 'react-router-hash-link';
 import ProjectCard from './ProjectCard';
-import { projects } from './data'; 
+import { projects } from './projects'; 
 
 function App() {
   return (
@@ -108,8 +108,8 @@ function App() {
             <header className='projects-header'>
               <h1>My Recent Client Projects</h1>
             </header>
-            {projects && projects.length > 0 && projects.map(project => 
-              <div className='col-lg-4'>
+            {projects && projects.length > 0 && projects.map((project, i) => 
+              <div key={i} className='col-lg-4'>
                 <ProjectCard project={project} />
               </div>
             )}

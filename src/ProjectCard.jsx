@@ -20,9 +20,10 @@ function ProjectCard({project}) {
                 }
                 <h3 className='project-card-contributions-header'>My Contributions</h3>
                 <ul className='project-card-contributions'>
-                    {myContributions.length > 0 && myContributions.map(item =>
-                        <li className='project-card-contributions-item'>
-                            {link ? <a href={item.link} target='_blank' rel='noreferrer'>{item.section}</a>
+                    {myContributions.length > 0 && myContributions.map((item, i) =>
+                        <li key={i} className='project-card-contributions-item'>
+                            {link ? 
+                                <a href={item.link} target='_blank' rel='noreferrer'>{item.section}</a>
                                 :
                                 item.section
                             }           
@@ -30,8 +31,8 @@ function ProjectCard({project}) {
                     )}
                 </ul>
                 <ul className='project-card-pills'>
-                    {techStack.length > 0 && techStack.map(tech => 
-                        <li className='project-card-pill' style={{backgroundColor: image.bgColor}}>{tech}</li>
+                    {techStack.length > 0 && techStack.map((tech, i) => 
+                        <li key={i} className='project-card-pill' style={{backgroundColor: image.bgColor}}>{tech}</li>
                     )}
                 </ul>
             </div>

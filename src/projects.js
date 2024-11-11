@@ -70,8 +70,8 @@ export var projects = [
         type: "Web Application",
         techStack: ["WordPress", "PHP", "Vue", "Sass"],
         myContributions: [
-            {section:"Tuition and Financial Aid - FAQ", link:"https://sps.wfu.edu/tuition-financial-aid/"}, 
-            {section:"Programs - Program Cards", link:"https://sps.wfu.edu/programs/"}, 
+            {section:"Tuition and Financial Aid", link:"https://sps.wfu.edu/tuition-financial-aid/"}, 
+            {section:"Programs", link:"https://sps.wfu.edu/programs/"}, 
             {section:"Downloads Filter", link:"https://sps.wfu.edu/downloads/"}, 
         ]
     },
