@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.50b73f4a.css",
-    "main.js": "/portfolio/static/js/main.92a10a74.js",
+    "main.js": "/portfolio/static/js/main.0289ac09.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/StickerbucksLogo.png": "/portfolio/static/media/StickerbucksLogo.f589dd783d15b0a2a7d0.png",
     "static/media/portfolio graphic.png": "/portfolio/static/media/portfolio graphic.cc6c39d43b47afa90ca2.png",
@@ -18,11 +18,11 @@
     "static/media/logo-without-icon.svg": "/portfolio/static/media/logo-without-icon.eebdd679bf304993caaa27870bfb98f3.svg",
     "index.html": "/portfolio/index.html",
     "main.50b73f4a.css.map": "/portfolio/static/css/main.50b73f4a.css.map",
-    "main.92a10a74.js.map": "/portfolio/static/js/main.92a10a74.js.map",
+    "main.0289ac09.js.map": "/portfolio/static/js/main.0289ac09.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50b73f4a.css",
-    "static/js/main.92a10a74.js"
+    "static/js/main.0289ac09.js"
   ]
 }
