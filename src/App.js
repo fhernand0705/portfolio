@@ -85,6 +85,7 @@ function App() {
                 <h5>Languages</h5>
                 <ul className='skills-languages'>
                   <li>PHP</li>
+                  <li>JavaScript</li>
                   <li>Java</li>
                 </ul>
                 <h5>Tools & Frameworks</h5>
@@ -94,6 +95,7 @@ function App() {
                   <li>Express</li>
                   <li>AWS</li>
                   <li>MySQL</li>
+                  <li>SQL Server</li>
                   <li>WordPress</li>
                   <li>Pantheon</li>
                 </ul>
