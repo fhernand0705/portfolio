@@ -11,7 +11,7 @@ export var projects = [
         image: {src:"./images/love-travels.svg", alt:"Love Travels by Marriott Bonvoy", bgColor: "#ff9662"},
         link: "https://www.marriottbonvoylovetravels.com/",
         type: "Static Microsite",
-        techStack: ["HTML", "CSS", "JavaScript"],
+        techStack: ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
         myContributions: [
             {section: "UNICEF Template", link:"https://www.marriottbonvoylovetravels.com/unicef.html"},  
         ]
