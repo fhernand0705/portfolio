@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.50b73f4a.css",
+    "main.js": "/static/js/main.572378ec.js",
+    "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
+    "static/media/StickerbucksLogo.png": "/static/media/StickerbucksLogo.f589dd783d15b0a2a7d0.png",
+    "static/media/portfolio graphic.png": "/static/media/portfolio graphic.cc6c39d43b47afa90ca2.png",
+    "static/media/superpretzel.png": "/static/media/superpretzel.aaa701fe8ce5e7e72261.png",
+    "static/media/FH-headshot.jpeg": "/static/media/FH-headshot.bf6a5aa147f962412d06.jpeg",
+    "static/media/vassar-logo.svg": "/static/media/vassar-logo.609f875b864d1f9cecfa.svg",
+    "static/media/intro-graphic.png": "/static/media/intro-graphic.b349d80626bff0624e74.png",
+    "static/media/obsidianworks-logo.png": "/static/media/obsidianworks-logo.cca9bb161bb8c7a1d683.png",
+    "static/media/wake-forest-logo.svg": "/static/media/wake-forest-logo.591aca0116c2f007a01c.svg",
+    "static/media/luigis-logo.png": "/static/media/luigis-logo.c7cd85c772fb7572de07.png",
+    "static/media/index.cjs": "/static/media/index.1282334337c6cac7deca.cjs",
+    "static/media/love-travels.svg": "/static/media/love-travels.616c23c28bf3930ca309.svg",
+    "static/media/logo-inverse.svg": "/static/media/logo-inverse.b6a9410ee11faf8adedef435a3551b04.svg",
+    "static/media/logo.svg": "/static/media/logo.f82f77ee4b9c092e461dae96b5b118a9.svg",
+    "static/media/logo-without-icon.svg": "/static/media/logo-without-icon.eebdd679bf304993caaa27870bfb98f3.svg",
+    "index.html": "/index.html",
+    "main.50b73f4a.css.map": "/static/css/main.50b73f4a.css.map",
+    "main.572378ec.js.map": "/static/js/main.572378ec.js.map",
+    "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50b73f4a.css",
+    "static/js/main.572378ec.js"
+  ]
+}
