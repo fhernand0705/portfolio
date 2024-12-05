@@ -7,6 +7,16 @@ export var projects = [
     //     myContributions: ["Home", "Flavors", "Footer"]
     // },
     {
+        title: "Loves Travels by Marriott Bonvoy",
+        image: {src:"./images/love-travels.svg", alt:"Love Travels by Marriott Bonvoy", bgColor: "#ff9662"},
+        link: "https://www.marriottbonvoylovetravels.com/",
+        type: "Static Microsite",
+        techStack: ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
+        myContributions: [
+            {section: "UNICEF Template", link:"https://www.marriottbonvoylovetravels.com/unicef.html"},  
+        ]
+    },
+    {
         title: "LUIGI'S Real Italian Ice",
         image: {src:"./images/luigis-logo.png", alt:"LUIGI'S Real Italian Ice", bgColor: "#EBA525"},
         link: "https://www.luigis.com/",
